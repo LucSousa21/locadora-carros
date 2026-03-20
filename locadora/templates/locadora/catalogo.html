@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+
+    <link rel="stylesheet" href="{% static 'locadora/style.css' %}">
+</head>
+
+<body>
+
+<header id="cabecalho">
+
+    <a href="{% url 'home' %}" class="logo-link">
+        <h1 id="logo">L&L Locadora</h1>
+    </a>
+
+    <nav>
+        <ul id="menu">
+
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+
+            <li>
+                <a href="{% url 'cars' %}">Carros</a>
+            </li>
+
+            <li>
+                <a href="{% url 'home' %}#contact">Contato</a>
+            </li>
+
+            <li>
+                <a href="#">Login</a>
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section id="cars" class="container">
+
+        <h2>Nossos Carros</h2>
+
+        <div class="car-list">
+
+
+            <div class="car-item">
+                <h3>Categoria A</h3>
+            </div>
+
+
+
+            <div class="carousel" data-images='["{% static "locadora/imgs/mobi.webp" %}",
+             "{% static "locadora/imgs/kwid.webp" %}"]'>
+
+                <button class="prev">←</button>
+
+                <img class="car-img"
+                     src="{% static 'locadora/imgs/mobi.webp' %}"
+                     alt="Carro Categoria A">
+
+                <button class="next">→</button>
+
+            </div>
+        </div>
+        <div class="locate">
+            <p>Na categoria A você encontra os melhores hatchs compactos.</p>
+            <button class="locate">Alugar</button>
+        </div>
+
+        <div class="car-item">
+            <h3>Categoria B</h3>
+        </div>
+
+        <div class="carousel">
+
+            <button class="prev">←</button>
+
+            <img class="car-img"
+                 src="{% static 'locadora/imgs/onix.png' %}"
+                 alt="Carro Categoria B">
+
+            <button class="next">→</button>
+
+        </div>
+
+
+        <div class="locate">
+            <p>Na categoria B você encontra os melhores hatchs.</p>
+            <button class="locate">Alugar</button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer id="rodape">
+<p>&copy; 2024 L&L Locadora. Todos os direitos reservados.</p>
+</footer>
+
+<script src="{% static 'locadora/script.js' %}"></script>
+
+</body>
+</html>
