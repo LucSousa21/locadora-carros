@@ -1,4 +1,4 @@
-﻿# 🚗 L&L Locadora de Carros
+﻿# L&L Locadora de Carros
 
 Projeto de sistema para locação de veículos desenvolvido com **Django**. O sistema permite visualizar categorias de carros e realizar simulações de aluguel.
 
@@ -8,7 +8,7 @@ Projeto de sistema para locação de veículos desenvolvido com **Django**. O si
 - **HTML5 & CSS3** 
 - **JavaScript** 
 
-## 🚀 Como rodar o projeto localmente
+## Como rodar o projeto localmente
 
 Siga os passos abaixo para configurar o ambiente:
 
