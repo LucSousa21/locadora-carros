@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros - L&L Locadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="index.html" class="logo-link">
+            <h1 id="logo">L&L Locadora</h1>
+        </a>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="cars.html">Carros</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cars" class="container">
+            <h2>Nossos Carros</h2>
+            <div class="car-list">
+                <div class="car-item">
+                <h3>Categoria A</h3>
+
+                <div class="carousel" data-images='["imgs/mobi.webp", "imgs/kwid.webp"]'>
+                    <button class="prev">←</button>
+                    <img class="car-img" src="imgs/mobi.webp" alt="Carro Categoria A">
+                    <button class="next">→</button>
+                </div>
+
+                <p>Na categoria A você encontra os melhores hatchs compactos.</p>
+            </div>
+
+            <div class="car-item">
+                <h3>Categoria B</h3>
+
+                <div class="carousel" data-images='["imgs/onix.png", "imgs/argo.webp"]'>
+                    <button class="prev">←</button>
+                    <img class="car-img" src="imgs/onix.png" alt="Carro Categoria B">
+                    <button class="next">→</button>
+                </div>
+
+                <p>Na categoria B você encontra os melhores hatchs.</p>
+            </div>
+
+
+
+                <!-- Adicione mais carros conforme necessário -->
+            
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>&copy; 2024 L&L Locadora. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
